@@ -1,8 +1,7 @@
 package com.example.grammar
 
-import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
-
+import android.support.v7.app.AppCompatActivity
 import kotlinx.android.synthetic.main.activity_main.*
 import org.jetbrains.anko.startActivity
 
@@ -12,6 +11,7 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
+//基本数据类型
         btn_variable.setOnClickListener { startActivity<VariableActivity>() }
         btn_array.setOnClickListener { startActivity<ArrayActivity>() }
         btn_string.setOnClickListener { startActivity<StringActivity>() }
