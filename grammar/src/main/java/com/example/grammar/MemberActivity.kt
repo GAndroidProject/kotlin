@@ -1,9 +1,8 @@
 package com.example.grammar
 
-import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
+import android.support.v7.app.AppCompatActivity
 import com.example.grammar.animal.*
-
 import kotlinx.android.synthetic.main.activity_member.*
 
 class MemberActivity : AppCompatActivity() {

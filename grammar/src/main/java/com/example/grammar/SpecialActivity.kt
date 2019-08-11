@@ -1,9 +1,11 @@
 package com.example.grammar
 
-import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
-import com.example.grammar.util.*
-
+import android.support.v7.app.AppCompatActivity
+import com.example.grammar.util.appendString
+import com.example.grammar.util.factorial
+import com.example.grammar.util.findFixPoint
+import com.example.grammar.util.maxCustom
 import kotlinx.android.synthetic.main.activity_special.*
 
 class SpecialActivity : AppCompatActivity() {
@@ -30,7 +32,10 @@ class SpecialActivity : AppCompatActivity() {
             when (count++%3) {
                 0 -> setArrayStr<Int>(int_array)
                 1 -> setArrayStr<Float>(float_array)
-                else -> setArrayStr<Double>(double_array)
+               else -> setArrayStr<Double>(double_array)
+
+//
+//                else -> setArrayNumber(double_array)
             }
         }
 

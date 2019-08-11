@@ -5,6 +5,8 @@ import org.jetbrains.anko.toast
 
 /**
  * Created by ouyangshen on 2017/8/8.
+ *
+ * sca: 调用第二个构造方法，不会调用第一个构造方法。
  */
 class AnimalSeparate {
     constructor(context:Context, name:String) {

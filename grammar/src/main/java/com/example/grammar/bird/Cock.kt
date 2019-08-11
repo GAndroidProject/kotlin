@@ -1,9 +1,8 @@
 package com.example.grammar.bird
 
-import kotlin.text.Typography.less
-
 /**
  * Created by ouyangshen on 2017/8/9.
+ * sca:  公鸡
  */
 class Cock(name:String="鸡", sex:Int = Bird.MALE, voice:String="喔喔喔") : Chicken(name, sex, voice) {
     override fun callOut(times: Int): String {

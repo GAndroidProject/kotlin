@@ -1,8 +1,7 @@
 package com.example.grammar
 
-import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
-
+import android.support.v7.app.AppCompatActivity
 import kotlinx.android.synthetic.main.activity_string.*
 
 class StringActivity : AppCompatActivity() {
@@ -62,17 +61,19 @@ class StringActivity : AppCompatActivity() {
             //tv_convert.text = origin.get(number).toString()
         }
 
-        btn_format.setOnClickListener { tv_convert.text = "字符串值为 $origin" }
-        //符号$后面跟变量名，系统会自动匹配最长的变量名。
-        //比如下面这个例子，打印出来的是origin_trim，不是origin
-        //btn_format.setOnClickListener { tv_convert.text = "字符串值为 $origin_trim" }
-        //如果在取值之前还要先运算，则需用大括号把运算表达式给括起来
-        btn_length.setOnClickListener { tv_convert.text = "字符串长度为 ${origin.length}" }
-        //在Kotlin中，美元符号$属于特殊字符，不能直接打印，必须经过转义才行
-        btn_dollar.setOnClickListener { tv_convert.text = "美元金额为 ${'$'}$origin" }
-        //如果只是对单个特殊字符做转义，也可直接用反斜杆。
-        //btn_dollar.setOnClickListener { tv_convert.text = "美元金额为 \$$origin" }
-        //${'***'}的好处是能够保留一个字符串中的所有特殊字符
+//        btn_format.setOnClickListener { tv_convert.text = "字符串值为 $origin" }
+//        //符号$后面跟变量名，系统会自动匹配最长的变量名。
+//        //比如下面这个例子，打印出来的是origin_trim，不是origin
+////        btn_format.setOnClickListener { tv_convert.text = "字符串值为 $origin_trim" }
+//        //如果在取值之前还要先运算，则需用大括号把运算表达式给括起来
+//        btn_length.setOnClickListener { tv_convert.text = "字符串长度为 ${origin.length}" }
+//        //在Kotlin中，美元符号$属于特殊字符，不能直接打印，必须经过转义才行
+//        btn_dollar.setOnClickListener { tv_convert.text = "美元金额为 ${'$'}$origin" }
+//        //如果只是对单个特殊字符做转义，也可直接用反斜杆。
+//        //btn_dollar.setOnClickListener { tv_convert.text = "美元金额为 \$$origin" }
+//        //${'***'}的好处是能够保留一个字符串中的所有特殊字符
 
+        btn_format.setOnClickListener { tv_convert.text = "字符串值为 $origin" }
+//        btn_dollar.setOnClickListener { tv_convert.text = "美元金额为  ${'$\n'}" }
     }
 }

@@ -1,9 +1,9 @@
 package com.example.grammar.bird
 
-import com.example.grammar.animal.WildAnimal
-
 /**
  * Created by ouyangshen on 2017/8/9.
+ *
+ * sca： 母鸡
  */
 class Hen(name:String="鸡", sex:Int = Bird.FEMALE, voice:String="咯咯咯") : Chicken(name, sex, voice) {
     override fun callOut(times: Int): String {

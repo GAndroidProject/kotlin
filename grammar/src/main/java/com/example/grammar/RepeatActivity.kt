@@ -1,8 +1,7 @@
 package com.example.grammar
 
-import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
-
+import android.support.v7.app.AppCompatActivity
 import kotlinx.android.synthetic.main.activity_repeat.*
 
 class RepeatActivity : AppCompatActivity() {
@@ -115,3 +114,14 @@ class RepeatActivity : AppCompatActivity() {
         }
     }
 }
+
+
+/**
+ *
+ * continue
+ * break
+ *
+ * outside@ break@outside 需要配对使用。
+ *
+ *
+ * */

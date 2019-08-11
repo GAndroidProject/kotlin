@@ -2,6 +2,8 @@ package com.example.grammar.bird
 
 /**
  * Created by ouyangshen on 2017/8/9.
+ *
+ * sca：抽象类
  */
 //子类的构造函数，原来的输入参数不用加var和val，新增的输入参数必须加var或者val。
 //因为抽象类不能直接使用，所以构造函数不必给默认参数赋值。
